@@ -638,6 +638,7 @@ def plot_cones(ax, x, y, u, v, intensity, scale=1, angle=30, cmap='viridis', **k
 def plot_rir(rir, title='', t_intervals=None, ax = None):
     if t_intervals is None:
         t_intervals = [.01, .2]
+    width = 6.694
     normalise_response = lambda x : x/np.max(abs(x))
     # width = plot_settings()
     # fig, ax = plt.subplots(1, 1, figsize=(width, width/4))

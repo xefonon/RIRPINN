@@ -1,0 +1,18 @@
+name: rir_pinn
+channels:
+  - defaults
+dependencies:
+  - pytorch::pytorch
+  - torchaudio
+  - torchvision
+  - matplotlib
+  - scikit-learn
+  - pydoe
+  - pyyaml
+  - h5py
+  - numpy
+  - einops
+  - tqdm
+  - openpyxl
+  - mpld3
+  - jupyter

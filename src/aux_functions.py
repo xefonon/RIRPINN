@@ -6,14 +6,14 @@ import torch.autograd as autograd  # computation graph
 import torch.nn as nn  # neural networks
 import numpy as np
 from torch.utils.data import Dataset
-from SF_PINN.utils_soundfields import plot_sf, plot_sf_quiver
+from src.utils_soundfields import plot_sf, plot_sf_quiver
 import matplotlib.pyplot as plt
 import matplotlib as mpl
 import os
 import glob
 import re
 from pyDOE import lhs
-from SF_PINN.SIREN import SirenNet, Siren, SirenResnet
+from src.SIREN import SirenNet, Siren, SirenResnet
 import h5py
 from sklearn.neighbors import NearestNeighbors
 import librosa
