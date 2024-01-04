@@ -1,0 +1,100 @@
+adaptive_loss_weights:
+  desc: "Use learnable weight of the PDE loss term in the loss function"
+  value: True
+batch_size:
+  desc: "Training batch size"
+  value: 250
+curriculum_training:
+  desc: "Increase time vector (training and PDE data) incrementally in a linear fashion"
+  value: False
+lambda_bc:
+  desc: "Weight of the boundary condition loss term in the loss function"
+  value: 0.0
+lambda_data:
+  desc: "Weight of the data loss term in the loss function"
+  value: 1.
+lambda_ic:
+  desc: "Weight of the initial condition loss term in the loss function"
+  value: 0.
+lambda_pde:
+  desc: "(initial) weight of the PDE loss term in the loss function, can change if adaptive_pde_weight is True"
+  value: 0.1
+loss_fn:
+  desc: "Loss function to use, can be 'MSE' or 'MAE'"
+  value: 'MAE'
+lr:
+  desc: "Learning rate"
+  value: 1.0e-05
+map_input:
+  desc: "Map input to [-1,1] range"
+  value: False
+max_t_counter:
+  desc: "set to -1 to disable seq2seq or curriculum training, 
+  otherwise set to i.e. 1e5 to train with curriculum or seq2seq training until that iteration"
+  value: -1
+n_hidden_layers:
+  desc: "Number of hidden layers in the neural network"
+  value: 3
+n_pde_samples:
+  desc: "Number of samples to use for the PDE loss term"
+  value: 25000
+rir_time:
+  desc: "Time limit for the RIR estimation"
+  value: 0.1
+scheduler_step:
+  desc: "Step size for the scheduler"
+  value: 5000
+siren:
+  desc: "Use SIREN activation function"
+  value: True
+standardize_data:
+  desc: "Standardize data to zero mean and unit variance"
+  value: False
+t_weighting_factor:
+  desc: "Exponential weighting factor for the time vector, only used if curriculum_training is True"
+  value: False
+train_epochs:
+  desc: "Number of training epochs"
+  value: 150000
+checkpoint_dir:
+  desc: "Directory to save network checkpoints"
+  value: './DTUdata_paper_siren_attMLP_100ms'
+sparse_data:
+  desc: "Use Jabra dataset with a few measurement positions and data for initial conditions"
+  value: False
+classroom_data:
+  desc: "Use 019 DTU classroom dataset"
+  value: False
+simulated_data:
+  desc: "Use simulated data from FDTD simulation"
+  value: False
+n_mics_per_dimension:
+  desc: "Number of microphones per dimension, only used if sparse_data is False"
+  value: 10
+activation_fn:
+  desc: "Activation function to use, can be 'relu', 'tanh', 'sine', 'sinc', 'gabor', etc."
+  value: 'sine'
+n_hidden_features:
+  desc: "Number of hidden features in the neural network"
+  value: 512
+outer_most_linear:
+  desc: "If true, use linear activation map on net last layer"
+  value: True
+lambda_edc:
+  desc: "energy decay curve fitting term weight"
+  value: 0.001
+sigma_lr:
+  desc: "learning rate for sigma"
+  value: 0.0001
+random_grid:
+  desc: "Use random sampled grid for the data"
+  value: False
+increase_first_layer_size:
+  desc: "Increase the first layer size by a factor of 1.5"
+  value: False
+use_layer_norm:
+  desc: "Use layer normalization"
+  value: False
+network_architecture:
+  desc: "choose between 'resnet', 'mlp' and 'attention_net' architectures"
+  value: 'attention_net'
