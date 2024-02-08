@@ -1,7 +1,7 @@
 # RIRPINN
 ***
 This repository contains the code for the paper [Room impulse response reconstruction with physics-informed deep learning
-](https://arxiv.org/abs/2401.01206). The paper is currently under review at the Journal of the Acoustical Society of America.
+](https://pubs.aip.org/asa/jasa/article/155/2/1048/3261969/Room-impulse-response-reconstruction-with-physics). The paper is published in the Journal of the Acoustical Society of America.
 
 ## Abstract
 ***
@@ -43,13 +43,19 @@ An example of how to use the trained network to reconstruct the sound field is p
 If you use this code in your research, please cite the following paper:
 
 ```
-@article{karakonstantis2024room,
-      title={Room impulse response reconstruction with physics-informed deep learning}, 
-      author={Xenofon Karakonstantis and Diego Caviedes-Nozal and Antoine Richard and Efren Fernandez-Grande},
-      year={2024},
-      eprint={2401.01206},
-      archivePrefix={arXiv},
-      primaryClass={eess.AS}
+@article{10.1121/10.0024750,
+    author = {Karakonstantis, Xenofon and Caviedes-Nozal, Diego and Richard, Antoine and Fernandez-Grande, Efren},
+    title = "{Room impulse response reconstruction with physics-informed deep learning}",
+    journal = {The Journal of the Acoustical Society of America},
+    volume = {155},
+    number = {2},
+    pages = {1048-1059},
+    year = {2024},
+    month = {02},
+    issn = {0001-4966},
+    doi = {10.1121/10.0024750},
+    url = {https://doi.org/10.1121/10.0024750},
+    eprint = {https://pubs.aip.org/asa/jasa/article-pdf/155/2/1048/19508065/1048\_1\_10.0024750.pdf},
 }
 ```
 ![](sf.gif)
