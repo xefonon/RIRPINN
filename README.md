@@ -3,6 +3,8 @@
 This repository contains the code for the paper [Room impulse response reconstruction with physics-informed deep learning
 ](https://pubs.aip.org/asa/jasa/article/155/2/1048/3261969/Room-impulse-response-reconstruction-with-physics). The paper is published in the Journal of the Acoustical Society of America.
 
+![](sf.gif)
+
 ## Abstract
 ***
 A method is presented for estimating and reconstructing the sound field within a room using physics-informed neural networks. By incorporating a limited set of experimental room impulse responses as training data, this approach combines neural network processing capabilities with the underlying physics of sound propagation, as articulated by the wave equation. The network's ability to estimate particle velocity and intensity, in addition to sound pressure, demonstrates its capacity to represent the flow of acoustic energy and completely characterise the sound field with only a few measurements. Additionally, an investigation into the potential of this network as a tool for improving acoustic simulations is conducted. This is due to its profficiency in offering grid-free sound field mappings with minimal inference time. Furthermore, a study is carried out which encompasses comparative analyses against current approaches for sound field reconstruction. Specifically, the proposed approach is evaluated against both data-driven techniques and elementary wave-based regression methods. The results demonstrate that the physics-informed neural network stands out when reconstructing the early part of the room impulse response, while simultaneously allowing for complete sound field characterisation in the time domain.
@@ -58,4 +60,3 @@ If you use this code in your research, please cite the following paper:
     eprint = {https://pubs.aip.org/asa/jasa/article-pdf/155/2/1048/19508065/1048\_1\_10.0024750.pdf},
 }
 ```
-![](sf.gif)
